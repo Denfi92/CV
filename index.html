@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzeev Daniil CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/atom-one-dark.min.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <nav class="main-nav">
+          <ul>
+            <li><a>About me</a></li>
+            <li><a>Contacts</a></li>
+            <li><a>Code style</a></li>
+            <li><a>Video</a></li>
+          </ul>
+        </nav>
+        <div class="header-container">
+          <div class="header-content-left">
+            <h1 class="header-title">Fuzeev <span>Daniil</span></h1>
+            <h3 class="header-subtitle">Future Front-End Developer</h3>
+          </div>
+          <figure class="header-content-right">
+            <img src="img/profile.jpg" alt="profile image" width="250" height="260">
+          </figure>
+        </div>
+      </header>
+      <div class="container">
+        <main class="main">
+          <section class="about">
+            <h2>About me</h2>
+              <p>I am 28 years old. Spent 3 years of my life in travelling around the world by plane while was working as flight attendant.
+                In free time, I learning Front-end Development and ride a motorbike.</p>
+              <h3>Languages</h3>
+              <p>Russian - Native<br>
+                English - A2(B1 in process)</p>
+          </section>
+          <section class="skills">
+            <h2>Skills</h2>
+              <ul>
+                <li><img src="img/html.svg" alt="html icon" width="40" height="40">HTML</li>
+                <li><img src="img/css.svg" alt="css icon" width="40" height="40">CSS</li>
+                <li><img src="img/javascript.svg" alt="js icon" width="40" height="40">JavaScript(basic)</li>
+                <li><img src="img/github.svg" alt="github icon" width="40" height="40">Git/GitHub</li>
+              </ul>
+          </section>
+        </main>
+        <aside class="aside">
+          <section class="courses">
+            <h2>Courses</h2>
+              <ul>
+                <li><a href="https://htmlacademy.ru/">HTMLAcademy</a></li>
+                <li><a href="https://javarush.ru/quests/QUEST_HARVARD_CS50">CS50</a></li>
+                <li><a href="https://learn.javascript.ru/">JavaScript</a></li>
+                <li><a href="https://rs.school/index.html">RS School "JavaScript/Front-end. Stage1"(in progress)</a></li>
+              </ul>
+          </section>
+          <section class="contacts">
+            <h2>Contacts</h2>
+              <ul>
+                <li>+7-962-316-1269</li>
+                <li>fuzeev.daniil@yandex.ru</li>
+                <li><a href="https://t.me/denfi69">Telegram</a></li>
+                <li><a href="https://github.com/Denfi92">GitHub</a></li>
+              </ul>
+          </section>
+        </aside>
+        <section class='code'>
+          <h2>Code example</h2>
+          <pre>
+            <code class="js">
+String.prototype.toJadenCase = function () {
+let jadenCase = '';
+let capitalize = true;
+                    
+for (let i = 0; i &lt; this.length; i++) {
+const letter = this[i];
+if (letter === ' ') {
+  capitalize = true;
+  jadenCase += ' ';
+} else {
+  if (capitalize) {
+      jadenCase += letter.toUpperCase();
+      capitalize = false;
+  } else {
+      jadenCase += letter.toLowerCase();
+  }
+}
+}                     
+return jadenCase;
+};
+            </code>
+          </pre>
+        </section>
+      </div>
+      <footer class="footer">
+        <a href="https://github.com/Denfi92"><img src="img/git.png" width="90" height="90" alt="git ico"></a>
+        <a href="https://rs.school/"><img src="img/rs_school_js.svg" width="90" height="90" alt="RS School ico"></a>
+        <p class="date">© 2021</p>
+      </footer>
+    </div>
+    <script src="js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
