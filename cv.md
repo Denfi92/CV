@@ -49,3 +49,8 @@ String.prototype.toJadenCase = function () {
 - [CS50](https://javarush.ru/quests/QUEST_HARVARD_CS50)
 - [JavaScript](https://learn.javascript.ru/)
 - [RS School "JavaScript/Front-end. Stage 1"(in progress)](https://rs.school/)
+
+## Languages
+
+Russian - **Native**  
+English - **A2(B1 in process)**
