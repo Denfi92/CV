@@ -52,24 +52,51 @@
         </main>
         <aside class="aside">
           <section class="courses">
-              <h2>Courses</h2>
+            <h2>Courses</h2>
               <ul>
-                  <li><a href="https://htmlacademy.ru/">HTMLAcademy</a></li>
-                  <li><a href="https://javarush.ru/quests/QUEST_HARVARD_CS50">CS50</a></li>
-                  <li><a href="https://learn.javascript.ru/">JavaScript</a></li>
-                  <li><a href="https://rs.school/index.html">RS School "JavaScript/Front-end. Stage1"(in progress)</a></li>
+                <li><a href="https://htmlacademy.ru/">HTMLAcademy</a></li>
+                <li><a href="https://javarush.ru/quests/QUEST_HARVARD_CS50">CS50</a></li>
+                <li><a href="https://learn.javascript.ru/">JavaScript</a></li>
+                <li><a href="https://rs.school/index.html">RS School "JavaScript/Front-end. Stage1"(in progress)</a></li>
               </ul>
           </section>
           <section class="contacts">
-              <h2>Contacts</h2>
+            <h2>Contacts</h2>
               <ul>
-                  <li>+7-962-316-1269</li>
-                  <li>fuzeev.daniil@yandex.ru</li>
-                  <li><a href="https://t.me/denfi69">Telegram</a></li>
-                  <li><a href="https://github.com/Denfi92">GitHub</a></li>
+                <li>+7-962-316-1269</li>
+                <li>fuzeev.daniil@yandex.ru</li>
+                <li><a href="https://t.me/denfi69">Telegram</a></li>
+                <li><a href="https://github.com/Denfi92">GitHub</a></li>
               </ul>
           </section>
-      </aside>
+        </aside>
+        <section class='code'>
+          <h2>Code example</h2>
+          <pre>
+            <code class="js">
+String.prototype.toJadenCase = function () {
+let jadenCase = '';
+let capitalize = true;
+                    
+for (let i = 0; i &lt; this.length; i++) {
+const letter = this[i];
+if (letter === ' ') {
+  capitalize = true;
+  jadenCase += ' ';
+} else {
+  if (capitalize) {
+      jadenCase += letter.toUpperCase();
+      capitalize = false;
+  } else {
+      jadenCase += letter.toLowerCase();
+  }
+}
+}                     
+return jadenCase;
+};
+            </code>
+          </pre>
+        </section>
       </div>
     </div>
   </body>
